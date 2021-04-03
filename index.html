@@ -13,7 +13,7 @@
     </head>
     <body>
                 <!--шапка-->
-                <header >
+                <header>
                     <div class="container mane-nav">
                     <nav class="">
                         <a  href="" class="logo-link"><span class="logo-item">Web</span><span class="logo">Studio</span></a>
@@ -42,7 +42,7 @@
                 <!-- Герой -->
                 <section class="hero banner">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button class="hero-button" type="button">Заказать услугу</button>
+                    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
                 </section>
             
                  <!-- Особенности -->
@@ -357,7 +357,13 @@
                         
                     </div>
                     </footer>
-              
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal-window">
+                    <button class="close-modal" data-modal-close></button>
+                </div>
+            </div>  
+
+        <script src="./js/modal.js"></script>
 
     </body>
     </html>
